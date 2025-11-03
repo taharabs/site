@@ -27,15 +27,15 @@ app.get('/', (req, res) => {
 });
 
 // Serve other HTML pages
-app.get('/unet', (req, res) => {
+app.get('/UNet.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../UNet.html'));
 });
 
-app.get('/medical-equipment', (req, res) => {
+app.get('/medicalEquipmentEngineer.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../medicalEquipmentEngineer.html'));
 });
 
-app.get('/electronic-skills', (req, res) => {
+app.get('/practicalElectronicSkills.html', (req, res) => {
     res.sendFile(path.join(__dirname, '../practicalElectronicSkills.html'));
 });
 
