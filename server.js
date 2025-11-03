@@ -9,7 +9,7 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static('../')); // Go up one level to root
+app.use(express.static('.')); // Go up one level to root
 
 // Serve your main portfolio page with error handling
 app.get('/', (req, res) => {
