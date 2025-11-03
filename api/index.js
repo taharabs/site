@@ -14,7 +14,7 @@ app.use(express.static('../')); // Go up one level to root
 // Serve your main portfolio page with error handling
 app.get('/', (req, res) => {
     console.log('Serving main portfolio page...');
-    res.sendFile(path.join(__dirname, 'taharsite6.0.html'), (err) => {
+    res.sendFile(path.join(__dirname, '../taharsite6.0.html'), (err) => {
         if (err) {
             console.log('Error serving taharsite6.0.html:', err);
             res.status(500).json({ 
@@ -28,15 +28,15 @@ app.get('/', (req, res) => {
 
 // Serve other HTML pages
 app.get('/unet', (req, res) => {
-    res.sendFile(path.join(__dirname, 'UNet.html'));
+    res.sendFile(path.join(__dirname, '../UNet.html'));
 });
 
 app.get('/medical-equipment', (req, res) => {
-    res.sendFile(path.join(__dirname, 'medicalEquipmentEngineer.html'));
+    res.sendFile(path.join(__dirname, '../medicalEquipmentEngineer.html'));
 });
 
 app.get('/electronic-skills', (req, res) => {
-    res.sendFile(path.join(__dirname, 'practicalElectronicSkills.html'));
+    res.sendFile(path.join(__dirname, '../practicalElectronicSkills.html'));
 });
 
 // Your existing API routes
