@@ -3195,6 +3195,55 @@ html {
         height: 20px;
     }
 }
+
+/* Technical Skills Section Styling - Same as About */
+.skills-container {
+    padding: 8rem 10%;
+    background-color: var(--bg);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.skills-container h3 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+    position: relative;
+    color: var(--text);
+}
+
+.skills-container h3::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: var(--secondary);
+}
+
+/* Responsive for technical skills */
+@media (max-width: 768px) {
+    .skills-container {
+        padding: 6rem 5%;
+    }
+    
+    .skills-container h3 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container {
+        padding: 5rem 5%;
+    }
+    
+    .skills-container h3 {
+        font-size: 1.8rem;
+    }
+}
     </style>
 </head>
 
@@ -3242,7 +3291,7 @@ html {
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>Mohamed Tahar <span>ABABSA</span></h1>
-            <h2>Embedded AI Engineer | FPGA Specialist</h2>
+            <h2>Embedded Systems | AI & Network Engineer</h2>
             <p>Delivering end-to-end technical solutions from embedded hardware to enterprise systems. Skilled in AI integration,
             networking, servers, ERP platforms, and system optimization for business environments.</p>
             <div class="hero-btns">
@@ -3259,158 +3308,166 @@ html {
     <!-- About Section -->
     <section class="about" id="about">
         <h2 class="section-title">About Me</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <h3>Embedded Systems & AI & Network Engineer</h3>
-                <p>I help companies design, deploy, and maintain reliable technical systems that support their daily operations and
-                long-term growth. With a Master’s degree in Embedded Systems Engineering, I bring a strong mix of engineering expertise
-                and practical experience across embedded systems, artificial intelligence, networking, servers, and ERP platforms.<br><br>
-                
-                I have worked in structured industrial environments, where reliability, security, and efficiency are critical. I am
-                comfortable collaborating with technical teams, management, and non-technical stakeholders to deliver solutions that
-                improve performance, optimize processes, and ensure system stability.<br><br>
-                
-                My focus is on building scalable, business-ready systems that connect hardware, software, and enterprise infrastructure
-                in a clear and sustainable way..</p>
+        <div>
+<div class="about-content">
+    <div class="about-text">
+        <h3>Embedded Systems & AI & Network Engineer</h3>
+        <p>I help companies design, deploy, and maintain reliable technical systems that support their daily operations
+            and
+            long-term growth. With a Master’s degree in Embedded Systems Engineering, I bring a strong mix of
+            engineering expertise
+            and practical experience across embedded systems, artificial intelligence, networking, servers, and ERP
+            platforms.<br><br>
 
-                <div class="stats-container">
-                    <div class="stat-box">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-title">Years of Experience</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">35+</div>
-                        <div class="stat-title">Projects Completed</div>
-                    </div>
-                    <div class="stat-box">
-                        <div class="stat-number">30+</div>
-                        <div class="stat-title">Satisfied Clients</div>
-                    </div>
-                </div>
+            I have worked in structured industrial environments, where reliability, security, and efficiency are
+            critical. I am
+            comfortable collaborating with technical teams, management, and non-technical stakeholders to deliver
+            solutions that
+            improve performance, optimize processes, and ensure system stability.<br><br>
 
-<div class="skills-container">
-    <h3>Technical Skills</h3>
+            My focus is on building scalable, business-ready systems that connect hardware, software, and enterprise
+            infrastructure
+            in a clear and sustainable way..</p>
 
-    <!-- Embedded Systems & Hardware -->
-    <div class="skill-category">
-        <div class="category-header">
-            <i class="fas fa-microchip"></i>
-            <span>Embedded Systems & Hardware</span>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">Embedded Systems Development (ARM Cortex, Microcontrollers)</span>
-                <span class="skill-percentage">90%</span>
+        <div class="stats-container">
+            <div class="stat-box">
+                <div class="stat-number">3+</div>
+                <div class="stat-title">Years of Experience</div>
             </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 90%"></div>
+            <div class="stat-box">
+                <div class="stat-number">35+</div>
+                <div class="stat-title">Projects Completed</div>
             </div>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">FPGA Design & Acceleration (Vivado, Vitis)</span>
-                <span class="skill-percentage">85%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
+            <div class="stat-box">
+                <div class="stat-number">30+</div>
+                <div class="stat-title">Satisfied Clients</div>
             </div>
         </div>
-    </div>
 
-    <!-- Artificial Intelligence & Data -->
-    <div class="skill-category">
-        <div class="category-header">
-            <i class="fas fa-brain"></i>
-            <span>Artificial Intelligence & Data</span>
         </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">AI Integration & Deployment (CNN, U-Net, Edge AI)</span>
-                <span class="skill-percentage">85%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
-            </div>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">Computer Vision (OpenCV)</span>
-                <span class="skill-percentage">80%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 80%"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Networking & IT Infrastructure -->
-    <div class="skill-category">
-        <div class="category-header">
-            <i class="fas fa-network-wired"></i>
-            <span>Networking & IT Infrastructure</span>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">Computer Networking (LAN/WAN, TCP/IP, Switching, Routing)</span>
-                <span class="skill-percentage">88%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 88%"></div>
-            </div>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">Server Administration (Linux, Windows Server)</span>
-                <span class="skill-percentage">85%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
-            </div>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">System Security & Optimization</span>
-                <span class="skill-percentage">80%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 80%"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Enterprise Systems & Software -->
-    <div class="skill-category">
-        <div class="category-header">
-            <i class="fas fa-server"></i>
-            <span>Enterprise Systems & Software</span>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">ERP Systems (Deployment, Configuration, Integration)</span>
-                <span class="skill-percentage">82%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 82%"></div>
-            </div>
-        </div>
-        <div class="skill-item">
-            <div class="skill-info">
-                <span class="skill-title">System Integration & Automation</span>
-                <span class="skill-percentage">85%</span>
-            </div>
-            <div class="skill-bar">
-                <div class="skill-progress" style="width: 85%"></div>
-            </div>
-        </div>
-    </div>
-</div>
 
             <div class="about-image">
                 <img src="https://images.unsplash.com/photo-1629904853893-c2c8981a1dc5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
                     alt="AI and FPGA">
             </div>
         </div>
-    </section>
+    </section> 
+    <div class="skills-container">
+        <h3>Technical Skills</h3>
+    
+        <!-- Embedded Systems & Hardware -->
+        <div class="skill-category">
+            <div class="category-header">
+                <i class="fas fa-microchip"></i>
+                <span>Embedded Systems & Hardware</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">Embedded Systems Development (ARM Cortex, Microcontrollers)</span>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">FPGA Design & Acceleration (Vivado, Vitis)</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Artificial Intelligence & Data -->
+        <div class="skill-category">
+            <div class="category-header">
+                <i class="fas fa-brain"></i>
+                <span>Artificial Intelligence & Data</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">AI Integration & Deployment (CNN, U-Net, Edge AI)</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">Computer Vision (OpenCV)</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Networking & IT Infrastructure -->
+        <div class="skill-category">
+            <div class="category-header">
+                <i class="fas fa-network-wired"></i>
+                <span>Networking & IT Infrastructure</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">Computer Networking (LAN/WAN, TCP/IP, Switching, Routing)</span>
+                    <span class="skill-percentage">88%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 88%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">Server Administration (Linux, Windows Server)</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">System Security & Optimization</span>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Enterprise Systems & Software -->
+        <div class="skill-category">
+            <div class="category-header">
+                <i class="fas fa-server"></i>
+                <span>Enterprise Systems & Software</span>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">ERP Systems (Deployment, Configuration, Integration)</span>
+                    <span class="skill-percentage">82%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 82%"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-info">
+                    <span class="skill-title">System Integration & Automation</span>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Services Section -->
     <section class="services" id="services">
