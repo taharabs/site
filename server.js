@@ -9,21 +9,24 @@ const app = express();
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static('.')); // Go up one level to root
+// Only the image folder is public; pages are served by the routes below, so source files
+// such as server.js and package.json are never downloadable.
+app.use('/image', express.static(path.join(__dirname, 'image')));
 
 // Serve your main portfolio page with error handling
 app.get('/', (req, res) => {
     console.log('Serving main portfolio page...');
-    res.sendFile(path.join(__dirname, 'taharsite6.0.html'), (err) => {
+    res.sendFile(path.join(__dirname, 'index.html'), (err) => {
         if (err) {
-            console.log('Error serving taharsite6.0.html:', err);
-            res.status(500).json({ 
-                error: 'File not found', 
-                message: 'taharsite6.0.html could not be found',
-                files: require('fs').readdirSync(__dirname)
-            });
+            console.log('Error serving index.html:', err);
+            res.status(500).json({ error: 'Page unavailable' });
         }
     });
+});
+
+// Other addresses of the home page, kept so existing links still work
+app.get(['/index.html', '/taharsite6.0.html'], (req, res) => {
+    res.redirect(301, '/');
 });
 
 // Serve other HTML pages
